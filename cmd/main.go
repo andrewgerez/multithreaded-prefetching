@@ -13,7 +13,6 @@ import (
 )
 
 func main() {
-    // Carregar variáveis do .env
     if err := godotenv.Load(); err != nil {
         log.Println(".env file not found, proceeding with system env vars")
     }

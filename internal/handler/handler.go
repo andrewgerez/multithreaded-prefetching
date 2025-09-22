@@ -71,7 +71,6 @@ func (h *Handler) AllProfilesHomes(w http.ResponseWriter, r *http.Request) {
     }
     wg.Wait()
 
-    // Mapeia resposta by profileID
     resp := make(map[string]interface{})
     for _, res := range results {
         if res.Err != nil {
